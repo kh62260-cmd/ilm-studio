@@ -7,17 +7,17 @@ const shorts = [
   {
     title: "Muharram Ki Fazilat",
     image: "/images/short1.png",
-    url: "https://www.youtube.com/@ilmStudioOffical/shorts",
+    url: "https://www.youtube.com/shorts/Iet6CAiEVqg",
   },
   {
     title: "Result Se Pehle Ye Dua",
     image: "/images/short2.png",
-    url: "https://www.youtube.com/@ilmStudioOffical/shorts",
+    url: "https://www.youtube.com/shorts/ZdODj8TMC1g",
   },
   {
-    title: "Aaj Ki Hadees",
+    title: "Allah Ta'ala Ki Sifaat ! 😢",
     image: "/images/short3.png",
-    url: "https://www.youtube.com/@ilmStudioOffical/shorts",
+    url: "https://www.youtube.com/shorts/BprQOtndf80",
   },
 ];
 
@@ -37,8 +37,7 @@ export default function LatestShorts() {
 
         <div className="shorts-grid">
 
-          {shorts.map((short, index) => (
-
+          {shorts.map((short) => (
             <motion.a
               key={short.title}
               href={short.url}
@@ -57,7 +56,9 @@ export default function LatestShorts() {
               />
 
               <div className="short-overlay">
-                <span className="play-icon">▶</span>
+                <span className="play-icon">
+                  ▶
+                </span>
               </div>
 
               <div className="short-info">
@@ -65,7 +66,6 @@ export default function LatestShorts() {
               </div>
 
             </motion.a>
-
           ))}
 
         </div>

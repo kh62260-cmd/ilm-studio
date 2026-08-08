@@ -9,22 +9,22 @@ const videos = [
     category: "Islamic History",
     image: "/images/video1.jpg",
     date: "July 2026",
-    url: "https://www.youtube.com/@ilmStudioOffical"
+    url: "https://youtu.be/O7tg0tF3upI",
   },
   {
     title: "10th Result Ki Dua",
     category: "Motivational",
     image: "/images/video2.png",
     date: "August 2026",
-    url: "https://www.youtube.com/@ilmStudioOffical"
+    url: "https://www.youtube.com/shorts/ZdODj8TMC1g",
   },
   {
     title: "My Family and I",
     category: "Moral Story",
     image: "/images/video3.jpg",
     date: "August 2026",
-    url: "https://www.youtube.com/@ilmStudioOffical"
-  }
+    url: "https://youtu.be/q7uY4UP8Eqc",
+  },
 ];
 
 export default function FeaturedVideos() {
@@ -43,8 +43,7 @@ export default function FeaturedVideos() {
 
         <div className="video-grid">
 
-          {videos.map((video, index) => (
-
+          {videos.map((video) => (
             <motion.a
               key={video.title}
               href={video.url}
@@ -56,13 +55,13 @@ export default function FeaturedVideos() {
 
               <div className="video-image">
 
-              <Image
-                src={video.image}
-                alt={video.title}
-                width={500}
-                height={300}
-                className="w-full h-auto"
-              />
+                <Image
+                  src={video.image}
+                  alt={video.title}
+                  width={500}
+                  height={300}
+                  className="w-full h-full object-cover"
+                />
 
                 <div className="play-overlay">
                   ▶
@@ -87,7 +86,6 @@ export default function FeaturedVideos() {
               </div>
 
             </motion.a>
-
           ))}
 
         </div>

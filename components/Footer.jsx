@@ -1,18 +1,19 @@
 "use client";
 
+import Link from "next/link";
+
 export default function Footer() {
   const year = new Date().getFullYear();
 
   return (
     <footer className="footer">
-
       <div className="container-custom">
 
         <div className="footer-top">
 
-          <h2 className="footer-logo">
+          <Link href="/" className="footer-logo">
             ILM <span>STUDIO</span>
-          </h2>
+          </Link>
 
           <p className="footer-text">
             Spreading authentic Islamic knowledge through Quran,
@@ -22,20 +23,24 @@ export default function Footer() {
 
         </div>
 
+        {/* Footer Links */}
         <div className="footer-links">
 
-          <a href="#home">Home</a>
+          <Link href="/">Home</Link>
 
-          <a href="#about">About</a>
+          <Link href="/about">About</Link>
 
-          <a href="#videos">Videos</a>
+          <Link href="/videos">Videos</Link>
 
-          <a href="#shorts">Shorts</a>
+          <Link href="/shorts">Shorts</Link>
 
-          <a href="#contact">Contact</a>
+          <Link href="/blog">Blog</Link>
+
+          <Link href="/contact">Contact</Link>
 
         </div>
 
+        {/* Contact / Social */}
         <div className="footer-contact">
 
           <p>
@@ -47,7 +52,23 @@ export default function Footer() {
             target="_blank"
             rel="noopener noreferrer"
           >
-            ▶ Visit YouTube Channel
+            ▶ YouTube
+          </a>
+
+          <a
+            href="https://www.instagram.com/ilmStudioOffical"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            📷 Instagram
+          </a>
+
+          <a
+            href="https://www.facebook.com/ilmStudioOffical"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            f Facebook
           </a>
 
         </div>
@@ -67,7 +88,6 @@ export default function Footer() {
         </div>
 
       </div>
-
     </footer>
   );
 }

@@ -16,7 +16,6 @@ export default function Loader({ children }) {
   if (loading) {
     return (
       <div className="loader-screen">
-
         <div className="loader-content">
 
           <div className="loader-crescent">
@@ -32,7 +31,6 @@ export default function Loader({ children }) {
           </div>
 
         </div>
-
       </div>
     );
   }

@@ -13,7 +13,6 @@ import ScrollToTop from "@/components/ScrollToTop";
 export default function Home() {
   return (
     <Loader>
-
       <Navbar />
 
       <Hero />
@@ -31,9 +30,8 @@ export default function Home() {
       <Contact />
 
       <Footer />
-      
-      <ScrollToTop />
 
+      <ScrollToTop />
     </Loader>
   );
 }

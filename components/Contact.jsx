@@ -12,7 +12,7 @@ export default function Contact() {
         <motion.h2
           initial={{ opacity: 0, y: 40 }}
           whileInView={{ opacity: 1, y: 0 }}
-          transition={{ duration: .8 }}
+          transition={{ duration: 0.8 }}
           viewport={{ once: true }}
           className="section-title"
         >
@@ -26,16 +26,21 @@ export default function Contact() {
         <motion.div
           initial={{ opacity: 0, y: 50 }}
           whileInView={{ opacity: 1, y: 0 }}
-          transition={{ duration: .8 }}
+          transition={{ duration: 0.8 }}
           viewport={{ once: true }}
           className="contact-card"
         >
 
-          <div className="contact-item">
+          {/* Email */}
+          <a
+            href="mailto:kh62260@gmail.com"
+            className="contact-item"
+          >
             <Mail size={28} />
             <span>kh62260@gmail.com</span>
-          </div>
+          </a>
 
+          {/* YouTube */}
           <a
             href="https://www.youtube.com/@ilmStudioOffical"
             target="_blank"
@@ -46,12 +51,29 @@ export default function Contact() {
             <span>YouTube Channel</span>
           </a>
 
+          {/* Instagram */}
           <a
-            href="#"
+            href="https://www.instagram.com/ilmStudioOffical"
+            target="_blank"
+            rel="noopener noreferrer"
             className="contact-item"
           >
             <Image size={28} />
-            <span>Instagram (Coming Soon)</span>
+            <span>Instagram</span>
+          </a>
+
+          {/* Facebook */}
+          <a
+            href="https://www.facebook.com/ilmStudioOffical"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="contact-item"
+          >
+            <span className="text-[#D4AF37] font-bold text-2xl">
+              f
+            </span>
+
+            <span>Facebook</span>
           </a>
 
         </motion.div>
