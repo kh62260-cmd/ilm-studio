@@ -76,6 +76,8 @@ export default function Hero() {
             {/* Articles */}
             <a
               href="/blog"
+              target="_blank"
+              rel="noopener noreferrer"
               className="outline-btn whitespace-nowrap text-sm sm:text-base w-full sm:w-auto text-center"
             >
               Explore Articles
