@@ -182,7 +182,7 @@ export default function BlogPage() {
 
             <div className="absolute inset-0 bg-[radial-gradient(circle_at_center,rgba(212,175,55,0.08),transparent_60%)]"></div>
 
-            <div className="relative z-10">
+            <div className="relative z-10 flex flex-col items-center text-center">
 
               <p className="text-gold font-semibold tracking-widest uppercase text-sm">
                 Ilm Studio
@@ -197,14 +197,16 @@ export default function BlogPage() {
                 liye hamare YouTube channel ko visit karein.
               </p>
 
+              <div className="mt-8">
               <a
                 href="https://www.youtube.com/@ilmStudioOffical"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="gold-btn inline-block mt-8"
+                className="gold-btn whitespace-nowrap"
               >
-                ▶ Watch on YouTube
+                 ▶ Watch on YouTube
               </a>
+            </div>
 
             </div>
 

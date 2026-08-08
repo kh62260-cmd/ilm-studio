@@ -1860,3 +1860,23 @@ body{
     white-space: nowrap;
   }
 }
+
+.hero-card {
+  height: auto !important;
+  min-height: fit-content !important;
+  display: flex !important;
+  flex-direction: column !important;
+  align-items: center !important;
+  justify-content: center !important;
+}
+
+.gold-btn,
+.outline-btn {
+  position: relative !important;
+  display: inline-flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  height: auto !important;
+  min-height: 44px !important;
+  line-height: 1.2 !important;
+}
